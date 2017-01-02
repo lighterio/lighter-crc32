@@ -4,8 +4,7 @@
   "description": "A lightweight JavaScript CRC32 calculator.",
   "dependencies": {},
   "devDependencies": {
-    "exam": ">=1.4.5 <2",
-    "xxhash": "0.2.4"
+    "exam": ">=1.4.5 <2"
   },
   "keywords": [
     "lighter",

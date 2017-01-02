@@ -1,6 +1,10 @@
 /* global bench it */
 var crc32 = require('../lighter-crc32')
-var Xxhash = require('xxhash')
+try {
+  var Xxhash = require('xxhash')
+} catch (ignore) {
+  // Nevermind.
+}
 
 bench('Hashing', function () {
   var i = 0
@@ -9,8 +13,10 @@ bench('Hashing', function () {
   })
 
   var j = 0
-  it('xxhash', function () {
-    var b = new Buffer('This is a hashable string ' + ++j)
-    b = new Xxhash(b, 0xCAFEBABE)
-  })
+  if (Xxhash) {
+    it('xxhash', function () {
+      var b = new Buffer('This is a hashable string ' + ++j)
+      b = new Xxhash(b, 0xCAFEBABE)
+    })
+  }
 })
