@@ -1,27 +1,36 @@
 {
   "name": "lighter-crc32",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A lightweight JavaScript CRC32 calculator.",
   "dependencies": {},
   "devDependencies": {
-    "exam": ">=0.3.5",
-    "xxhash": "^0.2.3"
+    "exam": ">=1.4.5 <2",
+    "xxhash": "0.2.4"
   },
   "keywords": [
-    "lighter",
+    "lighter"
+    "crc32",
+    "hash",
+    "cyclic",
+    "redundancy",
+    "check",
     "fast",
     "lightweight",
-    "minimal"
+    "minimal",
+    "benchmark",
+    "speed",
+    "ops"
   ],
   "main": "lighter-crc32.js",
   "engines": {
-    "node": ">=0.2.6"
+    "node": ">=0.8.28"
   },
   "scripts": {
     "test": "./node_modules/exam/exam.js",
     "cover": "./node_modules/exam/exam-cover.js",
     "report": "open coverage/lcov-report/index.html",
-    "coveralls": "./node_modules/exam/exam-coveralls.js"
+    "coveralls": "./node_modules/exam/exam-coveralls.js",
+    "bench": "./node_modules/exam/exam.js test/bench"
   },
   "repository": "https://github.com/lighterio/lighter-crc32.git",
   "bugs": "https://github.com/lighterio/lighter-crc32/issues",
@@ -30,5 +39,5 @@
   "contributors": [
     "Sam Eubank <sameubank@gmail.com>"
   ],
-  "license": "MIT"
+  "license": "ISC"
 }
