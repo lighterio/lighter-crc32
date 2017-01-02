@@ -8,7 +8,7 @@
     "xxhash": "0.2.4"
   },
   "keywords": [
-    "lighter"
+    "lighter",
     "crc32",
     "hash",
     "cyclic",
