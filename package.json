@@ -22,7 +22,7 @@
   ],
   "main": "lighter-crc32.js",
   "engines": {
-    "node": ">=0.8.28"
+    "node": ">=0.10"
   },
   "scripts": {
     "test": "./node_modules/exam/exam.js",
